@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HCI Project</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdjns.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+        
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+        /* Full height image header*/
+        
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("Wallpaper.jpg");
+            min-height: 100%;
+        }
+        
+        .d07-bar .d07-button {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--BIKIN NAVBARNYA DULU :)-->
+    <div class="d07-top">
+        <div class="d07-bar d07-white d07-card" id="DNavbar">
+            <a href="#home" class="d07-bar-item d07-button d07-wide">DINO FARM</a>
+            <!--NAVBAR LINKNYA DONG-->
+            <div class="d07-right d07-hide-small">
+                <a href="#about" class="d07-bar-item d07-button">ABOUT</a>
+                <a href="#workresult" class="d07-bar-item d07-button">VR & AR</a>
+                <a href="#contact" class="d07-bar-item d07-button">CONTACT</a>
+            </div>
+            <!--Menyembunyikan navbar ketika di HP-->
+            <a href="javscript:void(0)" onclick="d07_close()" class="d07-bar-item d07-button d07-right d07-hidelarge d07-hide-medium" onclick="d07_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <!--SIDEBAR ON SMALL SCREENS WHEN CLICKING THE MENU ICON-->
+    <nav class="d07-sidebars d07-bar-block d07-black d07-card d07-animate-left d07-hide-medium d07-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="d07_close()" class="d07-bar-item d07-button d07-large d07-padding-16">Close</a>
+        <a href="#about" onclick="d07_close()" class="d07-bar-item d07-button">ABOUT</a>
+        <a href="#workresult" onclick="d07_close()" class="d07-bar-item d07-button">WORK</a>
+        <a href="#contact" onclick="d07_close()" class="d07-bar-item d07-button">CONTACT</a>
+    </nav>
+    <!--HEADER WITH FULL IMAGE-->
+    <header class="bgimg-1 d07-display-container d07-grayscale-min" id="home">
+        <div class="d07-display-left d07-text-white" style="padding:48px">
+            <span class="d07-jumbo d07-hide-small">Welcome to Dino Farm VR & AR</span><br>
+            <span class="d07-xxlarge d07-hide-large d07-hide-medium">Weclome to Dino Farm VR & AR</span>
+            <span class="d07-large">Developed by: BINUSIAN</span>
+            <p><a href="#about" class="d07-button d07-white d07-padding-large d07-large d07-margin-top d07-opacity d07-hover-opacity-off d07-round-large">Click Here!</a></p>
+        </div>
+        <div class="d07-displat-bottomleft d07-text-grey d07-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-offi   6   556cial d07-hover-opacity"></i>
+            <i class="fa fa-instagram d07-hover-opacity"></i>
+        </div>
+    </header>
+
+    <!--BAGIAN ABOUT-->
+    <div class="d07-container" style="padding:70px 16px" id="about">
+        <h3 class="d07-center">OUR POSTERS</h3>
+        <p class="d07-center d07-large">Please Scan This QR Using App Pro 1</p>
+        <div class="d07-row-padding d07-center" style="margin-top:64px">
+            <div class="d07-quarter">
+                <img class="d07-image d07-round-large" src="1.png">
+            </div>
+            <div class="d07-quarter">
+                <img class="d07-image d07-round-large" src="2.png">
+            </div>
+            <div class="d07-quarter">
+                <img class="d07-image d07-round-large" src="3.png">
+            </div>
+            <div class="d07-quarter-1">
+                <img class="d07-image d07-round-large" src="4.png">
+            </div>
+            <div class="d07-quarter-1">
+                <img class="d07-image d07-round-large" src="5.png">
+            </div>
+            <div class="d07-quarter-1">
+                <img class="d07-image d07-round-large" src="6.png ">
+            </div>
+        </div>
+    </div>
+
+    <!--VR Game Project SECTION-->
+    <div class="d07-container d07-light-grey " style="padding:50px 16px" id="workresult">
+        <div class="d07-row-padding">
+            <div class="d07-col m6">
+                <h3>VR Game Project </h3>
+                <p>Here's our game project that directed to itch.io</p>
+                <p><a href="https://iannn07.itch.io/dino-farm" class="d07-button d07-black d07-round-large">Start Game</a> <a href="https://drive.google.com/file/d/1V6gEETx47gWBRWyFMjEoQA3C13qNEY1B/view?usp=sharing" class="d07-button d07-black d07-round-large">Download Pro 1</a></p>
+
+            </div>
+            <div class="d07-col m6">
+                <img class="d07-image d07-round-medium" src="Databases.jpg" width="700" height="394">
+            </div>
+        </div>
+    </div>
+
+    <!--CONTACT SECTION-->
+    <div class="d07-container d07-white" style="padding:50px 16px" id="contact">
+        <h3 class="d07-center">CONTACT</h3>
+        <p class="d07-center d07-large">Please contact us for your feedback!</p>
+        <!-- Image of location/map -->
+        <img src="Binus Malang.jpg" class="d07-image d07-round-large" style="width:100%">
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer class="d07-center d07-black d07-padding-64">
+        <p>Malang, East Java, Indonesia</p>
+        <p>Phone: 1234567890</p>
+        <p>Email: pmbmalang@binus.edu</p>
+        <br>
+        <a href="#home" class="d07-button d07-light-grey d07-round-large">To the top</a>
+        <p>Powered by Kelompok 4 HCI LAB</p>
+    </footer>
+</body>
+
+</html>
